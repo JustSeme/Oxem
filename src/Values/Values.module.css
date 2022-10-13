@@ -2,3 +2,25 @@
     display: flex;
     margin-bottom: 3.036%;
 }
+
+.float_right {
+    float: right;
+}
+
+@media (max-width: 767px) {
+    .values_wrapper {
+        display: block;
+    }
+}
+
+@media (min-width: 768px) {
+    .values_wrapper {
+        display: block;
+    }
+}
+
+@media (min-width: 1120px) {
+}
+
+@media (min-width: 1440px) {
+}

@@ -37,3 +37,30 @@
 .gray-label {
     color: var(--gray)
 }
+
+@media (max-width: 767px) {
+    .value_wrapper {
+        display: block;
+    }
+
+    .G-font {
+        font-size: 14px;
+        line-height: 136%;
+    }
+
+    .NB-font {
+        font-size: 34px;
+    }
+}
+
+@media (min-width: 768px) {
+    .value_wrapper {
+        display: block;
+    }
+}
+
+@media (min-width: 1120px) {
+}
+
+@media (min-width: 1440px) {
+}

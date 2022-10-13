@@ -10,5 +10,39 @@
 .title {
     width: 753px;
     height: 98px;
-    margin-bottom: 2.858%;
+    margin-bottom: 32px;
+}
+
+
+
+@media (max-width: 767px) {
+    .lease_wrapper {
+        width: 320px;
+    }
+    .title {
+        width: 279px;
+        height: 124px;
+    }
+}
+
+@media (min-width: 768px) {
+    .lease_wrapper {
+        width: 768px;
+    }
+    
+    .title {
+        margin-bottom: 44px;
+    }
+}
+
+@media (min-width: 1120px) {
+    .lease_wrapper {
+        width: 1120px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .lease_wrapper {
+        width: 1440px;
+    }
 }

@@ -2,12 +2,48 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    float: left;
 }
 
-.value_wrapper:not(:first-child) {
-    margin-left: 72px;
-}
-
-.value_wrapper .labelDesc {
+.labelDesc {
     margin-bottom: 8px
+}
+
+@media (max-width: 767px) {
+    .value_wrapper {
+        width: 100%;
+        margin-bottom: 29px;
+    }
+
+    .value_wrapper:nth-child(2) {
+        margin-bottom: 32px;
+    }
+
+    .labelDesc {
+        margin-bottom: 2px
+    }
+}
+
+@media (min-width: 768px) {
+    .value_wrapper {
+        margin-bottom: 44px;
+    }
+
+    .value_wrapper:nth-child(2) {
+        margin-left: 32px;
+        width: 50%;
+        float: right;
+    }
+}
+
+@media (min-width: 1120px) {
+    .value_wrapper:not(:first-child) {
+        margin-left: 72px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .value_wrapper:not(:first-child) {
+        margin-left: 72px;
+    }
 }

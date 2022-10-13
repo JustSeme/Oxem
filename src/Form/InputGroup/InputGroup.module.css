@@ -35,7 +35,7 @@
     line-height: 36px;
 }
 
-.myInput:focus, .myInput:valid {
+.myInput:focus {
     background: #FFFFFF;
     line-height: 32px;
     outline: 0;
@@ -54,7 +54,7 @@ input[type="number"]:focus {
     -moz-appearance: textfield;
 }
 
-.input_wrapper .labelDesc {
+.labelDesc {
     margin-bottom: 24px;
 }
 
@@ -66,6 +66,8 @@ input[type="number"]:focus {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+    margin-left: 24px;
+    margin-top: -2px;
 }
 
 .slider:hover {
@@ -110,4 +112,30 @@ input[type="number"]:focus {
 .slider::-ms-thumb:hover {
     width: 20px;
     height: 20px;
+}
+
+@media (max-width: 767px) {
+    .input_wrapper {
+        margin: 0;
+        margin-bottom: 16px;
+        width: 100%;
+    }
+
+    .labelDesc {
+        margin-bottom: 8px;
+    }
+}
+
+@media (min-width: 768px) {
+    .input_wrapper {
+        margin: 0;
+        margin-bottom: 32px;
+        width: 100%;
+    }
+}
+
+@media (min-width: 1120px) {
+}
+
+@media (min-width: 1440px) {
 }

@@ -30,3 +30,27 @@
 .submitButton:disabled {
     opacity: 0.5;
 }
+
+@media (max-width: 767px) {
+    .submitButton {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .submitButton {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 1120px) {
+    .value_wrapper:not(:first-child) {
+        margin-left: 72px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .value_wrapper:not(:first-child) {
+        margin-left: 72px;
+    }
+}

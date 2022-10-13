@@ -16,3 +16,21 @@
     line-height: 120%;
     text-align: right;
 }
+
+@media (max-width: 767px) {
+    .fields_wrapper {
+        display: block;
+    }
+}
+
+@media (min-width: 768px) {
+    .fields_wrapper {
+        display: block;
+    }
+}
+
+@media (min-width: 1120px) {
+}
+
+@media (min-width: 1440px) {
+}
