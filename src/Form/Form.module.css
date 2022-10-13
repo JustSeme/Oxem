@@ -23,7 +23,7 @@
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1119px) {
     .fields_wrapper {
         display: block;
     }

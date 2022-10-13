@@ -1,14 +1,11 @@
 .input_wrapper {
     margin: 0 32px;
+    position: relative;
+    width: 33.3333333%;
 }
 
 .input_wrapper:first-child {
     margin-left: 0;
-}
-
-.input_wrapper {
-    position: relative;
-    width: 33.333333%;
 }
 
 .myInput {
@@ -126,7 +123,7 @@ input[type="number"]:focus {
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1119px) {
     .input_wrapper {
         margin: 0;
         margin-bottom: 32px;
@@ -134,7 +131,7 @@ input[type="number"]:focus {
     }
 }
 
-@media (min-width: 1120px) {
+@media (min-width: 1120px) {    
 }
 
 @media (min-width: 1440px) {

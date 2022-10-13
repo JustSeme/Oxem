@@ -24,7 +24,7 @@
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1119px) {
     .value_wrapper {
         margin-bottom: 44px;
     }
@@ -36,7 +36,7 @@
     }
 }
 
-@media (min-width: 1120px) {
+@media (min-width: 1120px) and (max-width: 1439px) {
     .value_wrapper:not(:first-child) {
         margin-left: 72px;
     }
