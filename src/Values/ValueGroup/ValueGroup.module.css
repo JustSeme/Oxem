@@ -1,0 +1,13 @@
+.value_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.value_wrapper:not(:first-child) {
+    margin-left: 72px;
+}
+
+.value_wrapper .labelDesc {
+    margin-bottom: 8px
+}

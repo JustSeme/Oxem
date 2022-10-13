@@ -1,0 +1,32 @@
+.submitButton {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 12px 24px;
+    gap: 10px;
+    margin-left: 52px;
+    margin-top: auto;
+    height: 68px;
+
+    cursor: pointer;
+    font-size: 30px;
+    line-height: 36px;
+    color: #FFFFFF;
+    background: var(--main-color);
+    border-radius: 40px;
+    border: none;
+}
+
+.submitButton:hover {
+    background: #111111;
+}
+
+.submitButton:active {
+    background: var(--gray);
+}
+
+.submitButton:disabled {
+    opacity: 0.5;
+}

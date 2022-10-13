@@ -1,0 +1,18 @@
+.fields_wrapper {
+    display: flex;
+    margin-bottom: 3.036%;
+}
+
+.percent {
+    background: #EBEBEC;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px 12px;
+    gap: 10px;
+    border-radius: 16px;
+
+    font-size: 20px;
+    line-height: 120%;
+    text-align: right;
+}

@@ -1,0 +1,113 @@
+.input_wrapper {
+    margin: 0 32px;
+}
+
+.input_wrapper:first-child {
+    margin-left: 0;
+}
+
+.input_wrapper {
+    position: relative;
+    width: 33.333333%;
+}
+
+.myInput {
+    background: var(--input-bg-color);
+    color: var(--gray);
+    font-size: 30px;
+    line-height: 36px;
+    border: 0;
+    border-radius: 16px;
+    width: 100%;
+    padding: 16px 24px;
+}
+
+.ruble {
+    text-align: right;
+    color: var(--gray);
+
+    position: absolute;
+    height: 36px;
+    right: -40px;
+    top: 52%;
+    
+    font-size: 30px;
+    line-height: 36px;
+}
+
+.myInput:focus, .myInput:valid {
+    background: #FFFFFF;
+    line-height: 32px;
+    outline: 0;
+    border: 2px solid #F3F3F4;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type='number'],
+input[type="number"]:hover,
+input[type="number"]:focus {
+    appearance: none;
+    -moz-appearance: textfield;
+}
+
+.input_wrapper .labelDesc {
+    margin-bottom: 24px;
+}
+
+.slider {
+    width: 90%;
+    cursor: ew-resize;
+    height: 2px;
+    background-color: var(--main-color);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.slider:hover {
+    height: 1px;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: var(--main-color);
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+}
+
+.slider::-ms-thumb {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: var(--main-color);
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+}
+
+.slider::-moz-range-thumb {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: var(--main-color);
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+}
+
+.slider::-webkit-slider-thumb:hover {
+    width: 20px;
+    height: 20px;
+}
+
+.slider::-ms-thumb:hover {
+    width: 20px;
+    height: 20px;
+}
