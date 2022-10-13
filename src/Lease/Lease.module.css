@@ -96,6 +96,60 @@ input[type="number"]:focus {
     margin-bottom: 24px;
 }
 
+.slider {
+    width: 90%;
+    cursor: ew-resize;
+    height: 2px;
+    background-color: var(--main-color);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.slider:hover {
+    height: 1px;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: var(--main-color);
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+}
+
+.slider::-ms-thumb {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: var(--main-color);
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+}
+
+.slider::-moz-range-thumb {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: var(--main-color);
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+}
+
+.slider::-webkit-slider-thumb:hover {
+    width: 20px;
+    height: 20px;
+}
+
+.slider::-ms-thumb:hover {
+    width: 20px;
+    height: 20px;
+}
+
 .value_wrapper {
     display: flex;
     flex-direction: column;
@@ -116,7 +170,7 @@ input[type="number"]:focus {
     justify-content: center;
     align-items: center;
 
-    padding: 8px 16px 12px;
+    padding: 12px 24px;
     gap: 10px;
     margin-left: 52px;
     margin-top: auto;
@@ -129,4 +183,16 @@ input[type="number"]:focus {
     background: var(--main-color);
     border-radius: 40px;
     border: none;
+}
+
+.submitButton:hover {
+    background: #111111;
+}
+
+.submitButton:active {
+    background: var(--gray);
+}
+
+.submitButton:disabled {
+    opacity: 0.5;
 }
