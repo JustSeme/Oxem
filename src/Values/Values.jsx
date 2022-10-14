@@ -35,7 +35,7 @@ const Values = ({ fieldData, initPayment, isRequested, setIsRequested }) => {
             .then(resp => setIsRequested(false))
             .catch(err => {
                 alert(err)
-                //setIsRequested(false)
+                setIsRequested(false)
             })
     }
 
