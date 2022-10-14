@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './Form.module.css'
 import InputGroup from './InputGroup/InputGroup';
 
-const Form = ({ fieldData, initPayment, className }) => {
+const Form = ({ fieldData, initPayment, isRequested }) => {
     const range = {
         carPrice: {
             min: 1000000,
@@ -27,6 +27,7 @@ const Form = ({ fieldData, initPayment, className }) => {
                 value={fieldData[0].carPrice}
                 onValueChange={fieldData[0].setCarPrice}
                 range={range.carPrice}
+                isRequested={isRequested}
             />
             <InputGroup
                 label='Первоначальный взнос'
@@ -36,6 +37,7 @@ const Form = ({ fieldData, initPayment, className }) => {
                 valuePercent={fieldData[1].initPaymentPercent}
                 onValueChange={fieldData[1].setInitPaymentPercent}
                 range={range.initPaymentPercent}
+                isRequested={isRequested}
             />
             <InputGroup
                 label='Срок лизинга'
@@ -44,6 +46,7 @@ const Form = ({ fieldData, initPayment, className }) => {
                 value={fieldData[2].leaseTerm}
                 onValueChange={fieldData[2].setLeaseTerm}
                 range={range.leaseTerm}
+                isRequested={isRequested}
             />
         </div>
     );

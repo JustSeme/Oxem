@@ -8,6 +8,7 @@ const Lising = () => {
     const [carPrice, setCarPrice] = useState(3300000)
     const [initPaymentPercent, setInitPaymentPercent] = useState(13)
     const [leaseTerm, setLeaseTerm] = useState(60)
+    const [isRequested, setIsRequested] = useState(false)
 
     const fieldData = [
         { carPrice, setCarPrice },
@@ -21,8 +22,8 @@ const Lising = () => {
         <div className={styles.lease_wrapper} >
             <Title />
             <div className={styles.form_wrapper}>
-                <Form className='' fieldData={fieldData} initPayment={initPayment} />
-                <Values fieldData={fieldData} initPayment={initPayment} />
+                <Form isRequested={isRequested} className='' fieldData={fieldData} initPayment={initPayment} />
+                <Values fieldData={fieldData} initPayment={initPayment} isRequested={isRequested} setIsRequested={setIsRequested} />
             </div>
         </div >
     );

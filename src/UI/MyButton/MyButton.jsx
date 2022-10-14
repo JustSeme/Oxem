@@ -1,9 +1,10 @@
 import React from 'react';
 import styles from './MyButton.module.css'
+import MyPreloader from './MyPreloader/MyPreloader';
 
-const MyButton = () => {
+const MyButton = ({ isRequested, disabled, ...props }) => {
     return (
-        <button className={styles.submitButton + ' NB-font'}>Оставить заявку</button>
+        <button {...props} className={styles.submitButton + ' NB-font'} disabled={disabled}>{disabled ? <MyPreloader /> : 'Оставить заявку'}</button>
     );
 };
 

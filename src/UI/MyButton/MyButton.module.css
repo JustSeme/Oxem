@@ -3,12 +3,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    vertical-align: center;
 
     padding: 12px 24px;
     gap: 10px;
     margin-left: 52px;
     margin-top: auto;
     height: 68px;
+    min-width: 288px;
 
     cursor: pointer;
     font-size: 30px;
